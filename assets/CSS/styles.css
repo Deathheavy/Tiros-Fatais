@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -9,6 +8,7 @@
 
 html {
   height: -webkit-fill-available;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,8 +43,9 @@ header {
 }
 
 .navbar a:hover {
-  transition: 0.4s ease-in;
-  background: #ddd;
+  width: 141px;
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
   color: black;
 }
 
@@ -170,6 +171,7 @@ header {
   width: 600px;
   height: 400px;
   object-fit: cover;
+  border-radius: 1%;
 }
 
 .container .slider-scrollbar {
@@ -221,11 +223,13 @@ header {
   color: white;
   font-size: 16px;
   border: 2px solid white;
+  box-shadow: 2px 2px 15px 8px black;
 }
 
 .imgdescricao p {
   color: white;
   font-size: 16px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .divalt {
@@ -245,7 +249,7 @@ header {
   left: 1300px;
   top: 345px;
   border: 3px solid black;
-  border-radius: 2px;
+  border-radius: 5px;
   background: #6fa720;
   background: -webkit-linear-gradient(top, #6fa720 5%, #588a1b 95%);
   background: linear-gradient(to bottom, #6fa720 5%, #588a1b 95%);
@@ -257,6 +261,16 @@ header {
   line-height: 30px;
   max-width: 100px;
   min-width: 100px;
+  box-shadow: 2px 2px 15px 5px black;
+}
+
+.button:hover {
+  width: 95px;
+  height: 36px;
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
+  color: black;
+  background-size: cover;
 }
 
 .preco {
@@ -271,6 +285,8 @@ header {
   max-width: 70px;
   left: 1230px;
   top: 391px;
+  box-shadow: 2px 2px 15px 1px black;
+  border-radius: 10%;
 }
 
 .buttonbackground {
@@ -292,12 +308,7 @@ header {
   margin-bottom: 28px;
   max-width: 300px;
   z-index: 1;
-}
-
-.button:hover {
-  opacity: 0.8;
-  transition: 0.4s ease-in;
-  color: black;
+  box-shadow: 2px 2px 15px 4px black;
 }
 
 .div1 {
@@ -309,6 +320,7 @@ header {
   color: #fff;
   font-size: 20px;
   margin: 5px auto 10px 5px;
+  text-shadow: 2px 2px 5px black;
 }
 
 .sub {
@@ -345,10 +357,15 @@ form {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 2px 2px 15px 8px black;
 }
 
 .submit-btn:hover {
+  width: 98px;
+  height: 27px;
   opacity: 0.7;
+  transition: all ease-in-out 0.2s;
+  background-size: cover;
 }
 
 .social {
@@ -376,22 +393,29 @@ form {
 }
 
 .fa:hover {
+  width: 61px;
+  height: 61px;
   opacity: 0.7;
+  transition: all ease-in-out 0.1s;
+  background-size: cover;
 }
 
 .fa-facebook {
   background: #3b5998;
   color: white;
+  box-shadow: 2px 2px 15px 2px black;
 }
 
 .fa-twitter {
   background: #55acee;
   color: white;
+  box-shadow: 2px 2px 15px 2px black;
 }
 
 .fa-instagram {
   background: #e97474;
   color: white;
+  box-shadow: 2px 2px 15px 2px black;
 }
 
 #mobile {
@@ -499,6 +523,7 @@ form {
   position: relative;
   top: -100px;
   cursor: pointer;
+  box-shadow: 2px 2px 5px 2px black;
 }
 
 .game-section .item:hover {
@@ -524,6 +549,7 @@ form {
   top: -560px;
   left: 400px;
   cursor: pointer;
+  box-shadow: 2px 2px 5px 2px black;
 }
 
 .game-section .item2:hover {
@@ -549,6 +575,7 @@ form {
   top: -1020px;
   left: 800px;
   cursor: pointer;
+  box-shadow: 2px 2px 5px 2px black;
 }
 
 .game-section .item3:hover {
@@ -594,6 +621,15 @@ form {
   height: 130px;
   width: 100%;
   overflow: hidden;
+}
+
+#ftr nav a {
+  text-decoration: none;
+}
+
+#ftr nav a:visited {
+  border-color: hotpink;
+  color: hotpink;
 }
 
 .about {
@@ -1013,6 +1049,14 @@ form {
     left: 250px;
   }
 
+  .game-section .item:hover {
+    width: 102px;
+    height: 102px;
+    transition: all ease-in-out 0.2s;
+    background: black;
+    background-size: cover;
+  }
+
   .game-section .item2 {
     display: block;
     position: absolute;
@@ -1021,12 +1065,28 @@ form {
     left: 350px;
   }
 
+  .game-section .item2:hover {
+    width: 102px;
+    height: 102px;
+    transition: all ease-in-out 0.2s;
+    background: black;
+    background-size: cover;
+  }
+
   .game-section .item3 {
     display: block;
     position: absolute;
     width: 100px;
     height: 100px;
     left: 460px;
+  }
+
+  .game-section .item3:hover {
+    width: 102px;
+    height: 102px;
+    transition: all ease-in-out 0.2s;
+    background: black;
+    background-size: cover;
   }
 
   #mobile {
